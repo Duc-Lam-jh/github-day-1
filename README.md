@@ -29,3 +29,16 @@ We will have to stash our changes on our current branch, then go to the bugged b
 
   //continue working on your code
 ```
+
+# Answer 3
+We will use the revert command to revert the merge (by adding a new commit that undoes the changes in the merge). By doing this, we will have to resolve the conflicts manually to decide what to keep and what to omit.
+
+```
+  git revert commitID_of_the_merge
+
+  //resolve conflicts
+
+  git add .
+
+  git commit -m 'revert merge'
+```
