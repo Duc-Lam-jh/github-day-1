@@ -10,3 +10,22 @@ We should create new branches for features off of production branch. Because the
 
   git checkout feature
 ```
+
+# Answer 2
+We will have to stash our changes on our current branch, then go to the bugged branch, pull it and start resolving the bug.
+
+```
+  git stash save -u "name of stash"
+
+  git checkout feature
+
+  git pull
+
+  //resolve the bug and commit, then push to the feature branch
+
+  git checkout old_branch_you_were_working_on
+
+  git stash apply stash@{index_of_your_stash}
+
+  //continue working on your code
+```
