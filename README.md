@@ -31,5 +31,3 @@ We will have to stash our changes on our current branch, then go to the bugged b
 ```
 
 f1
-f2
-f3
