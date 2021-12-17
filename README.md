@@ -3,7 +3,10 @@ We should create new branches for features off of production branch. Because the
 
 `
   git checkout production
+
   git pull
+
   git branch feature
+  
   git checkout feature
 `
